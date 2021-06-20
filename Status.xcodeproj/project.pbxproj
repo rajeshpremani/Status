@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E3BDA438267E924E00B93BEF /* Status.h in Headers */ = {isa = PBXBuildFile; fileRef = E3BDA436267E924E00B93BEF /* Status.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3BDA440267E92BE00B93BEF /* StatusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3BDA43F267E92BE00B93BEF /* StatusView.xib */; };
+		E3BDA443267E930500B93BEF /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BDA442267E930500B93BEF /* StatusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E3BDA433267E924E00B93BEF /* Status.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Status.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3BDA436267E924E00B93BEF /* Status.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Status.h; sourceTree = "<group>"; };
 		E3BDA437267E924E00B93BEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3BDA43F267E92BE00B93BEF /* StatusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusView.xib; sourceTree = "<group>"; };
+		E3BDA442267E930500B93BEF /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,8 +52,18 @@
 			children = (
 				E3BDA436267E924E00B93BEF /* Status.h */,
 				E3BDA437267E924E00B93BEF /* Info.plist */,
+				E3BDA445267E931000B93BEF /* StatusView */,
 			);
 			path = Status;
+			sourceTree = "<group>";
+		};
+		E3BDA445267E931000B93BEF /* StatusView */ = {
+			isa = PBXGroup;
+			children = (
+				E3BDA442267E930500B93BEF /* StatusView.swift */,
+				E3BDA43F267E92BE00B93BEF /* StatusView.xib */,
+			);
+			path = StatusView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +108,7 @@
 				TargetAttributes = {
 					E3BDA432267E924E00B93BEF = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -120,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3BDA440267E92BE00B93BEF /* StatusView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3BDA443267E930500B93BEF /* StatusView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +278,7 @@
 		E3BDA43C267E924E00B93BEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F7X5NH2GJM;
@@ -277,6 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Premani.Status;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +304,7 @@
 		E3BDA43D267E924E00B93BEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F7X5NH2GJM;
